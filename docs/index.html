@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Origin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+</head>
+<body>
+
+<header class="navbar">
+<div class="logo">
+   <img src="assets/icon.png" alt="logo">
+    
+    <div class="logo-text">
+      <span>Code Origin</span>
+      <p>VsCode Extension</p>
+    </div>
+    
+
+  </div>
+
+  <nav id="nav">
+    <a href="#features">Features</a>
+    <a href="#work">How It Works</a>
+    <a href="javascript:void(0)" onclick="openVSCode()">Download</a>
+  </nav>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+<section class="hero">
+
+  <!-- LEFT -->
+  <div class="hero-content">
+    <h1>“Stop Losing Track of Where Your Code Comes From...?”</h1>
+    <p> “Track AI, GitHub, and copied code sources directly inside VS Code — avoid bugs, confusion, and legal risk.”</p>
+
+    <div class="hero-buttons">
+      <button class="vscode-btn" onclick="download()">
+        <img src="assets/icon.png" alt="VS Code">
+        Try VsCode Extension
+      </button>
+    </div>
+  </div>
+
+  <!-- RIGHT (REAL UI CARD) -->
+  <div class="hero-card">
+
+    <h3>🧠 Why Code Origin?</h3>
+
+    <p class="muted">Modern developers often copy code from:</p>
+
+    <ul>
+      <li>🤖 AI tools (ChatGPT, Copilot)</li>
+      <li>🌐 StackOverflow / Blogs</li>
+      <li>📦 GitHub repositories</li>
+    </ul>
+
+    <p class="muted">But later...</p>
+
+    <div class="problems">
+      <span>👉 You forget source</span>
+      <span>👉 You can't trace logic</span>
+      <span>👉 You lose context</span>
+    </div>
+
+    <div class="solution">
+      <strong>Code Origin solves this.</strong>
+      <p>
+        Keeps source context inside your code — clean, simple, and automatic.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+<section class="how" id="work">
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div class="step">
+      <span>1</span>
+      <h3>Install Extension</h3>
+      <p>Add Code Origin Extension in your Vscode ( Code editor )</p>
+    </div>
+    <div class="step">
+      <span>2</span>
+      <h3>Paste Code</h3>
+      <p>Paste code from any source like ChatGPT or StackOverflow.</p>
+    </div>
+    <div class="step">
+      <span>3</span>
+      <h3>Quick Pick </h3>
+      <p>Extension automatically open Quick Pick to select the source of the code.</p>
+    </div>
+    <div class="step">
+      <span>4</span>
+      <h3>Right Click View </h3>
+      <p>Right Click view summary on terminal code source anytime.
+    </div>
+  </div>
+</section>
+<!-- FEATURES -->
+<section id="features" class="features">
+  <h2>Features</h2>
+
+  <div class="grid">
+
+    <div class="card" onclick="toggleFeature(this)">
+      <div class="card-title">⚡ Paste Detection</div>
+      <p class="feature-detail">
+        Detects pasted code instantly inside VsCode Editor and tracks its origin automatically.
+      </p>
+    </div>
+
+    <div class="card" onclick="toggleFeature(this)">
+      <div class="card-title">📊 Code Summary</div>
+      <p class="feature-detail">
+        Shows how much code is AI-generated vs manual with clean insights.
+      </p>
+    </div>
+
+    <div class="card" onclick="toggleFeature(this)">
+      <div class="card-title">🧠 Smart Comments</div>
+      <p class="feature-detail">
+        Auto formats comments based on language like JS, Python, HTML, etc.
+      </p>
+    </div>
+
+</section>
+
+<section class="about">
+  <div class="about-container">
+    
+    <!-- LEFT -->
+    <div class="about-text">
+      <h2>What is Code Origin?</h2>
+      <p>
+        Code Origin is a Vscode extension that helps developers track where their
+        code comes from. Whether it's from AI tools, StackOverflow, or manually written — everything is clearly marked.
+      </p>
+      <p>
+        No more confusion. No more messy code history. Just clean, trackable development.
+      </p>
+    </div>
+
+    <!-- RIGHT (TEXT UI CARD) -->
+    <div class="about-card">
+
+      <h3>🚀 Code Origin</h3>
+      <p class="muted">Track where your code comes from</p>
+
+      <div class="tag">Enabled</div>
+
+      <div class="about-block">
+        <strong>⚡ Feature</strong>
+        <p>Auto detects pasted code and tags its source instantly.</p>
+      </div>
+
+      <div class="about-block">
+        <strong>📊 Summary</strong>
+        <p>Shows AI vs manual code clearly inside your file.</p>
+      </div>
+
+      <div class="about-block">
+        <strong>🧠 Smart Comments</strong>
+        <p>Automatically formats comments based on language.</p>
+      </div>
+
+       <div class="about-block">
+        <strong>🧠 Smart Comments</strong>
+        <p>Automatically formats comments based on language.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="faq"></section>
+
+<section class="demo-section">
+
+  <h2>Extension Demo</h2>
+
+  <div class="demo-main">
+    <img src="assets/scd.gif" alt="Code Origin Demo">
+  </div>
+
+  <h2 class="screenshots-title">Screenshots</h2>
+
+  <div class="screenshots-grid">
+
+    <div class="shot-card">
+      <img src="assets/sc1.png" alt="Paste Detection">
+      <h3>Paste Detection</h3>
+    </div>
+
+    <div class="shot-card">
+      <img src="assets/sc2.png" alt="Insights Panel">
+      <h3>Insights Panel</h3>
+    </div>
+
+    <div class="shot-card">
+      <img src="assets/sc3.png" alt="Source Navigation">
+      <h3>Source Navigation</h3>
+    </div>
+
+    <div class="shot-card">
+      <img src="assets/sc4.png" alt="Code Highlighting">
+      <h3>Code Highlighting</h3>
+    </div>
+
+    <div class="shot-card">
+      <img src="assets/sc5.png" alt="Report View">
+      <h3>Report View</h3>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="love">
+  <h2>Why Developers Love Code Origin</h2>
+
+  <div class="love-grid">
+
+    <div class="love-card">
+      <h3>⚡ Save Time</h3>
+      <p>No need to remember where code came from — it's tracked automatically.</p>
+    </div>
+
+    <div class="love-card">
+      <h3>🧠 Better Code</h3>
+      <p>Clearly see which parts are AI-generated and which are yours.</p>
+    </div>
+
+    <div class="love-card">
+      <h3>🧼 Clean Code</h3>
+      <p>Structured comments keep your code readable and organized.</p>
+    </div>
+
+    <div class="love-card">
+      <h3>🚀 Productivity</h3>
+      <p>Focus and Boost on building, not tracking sources manually.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="faq">
+  <h2>FAQ</h2>
+
+  <div class="faq-item" onclick="toggleFAQ(this)">
+    <div class="faq-question">What is Code Origin?</div>
+    <div class="faq-answer">
+      Code Origin is the Vscode Extension ( code editor) that tracks where your code comes from.
+    </div>
+  </div>
+
+  <div class="faq-item" onclick="toggleFAQ(this)">
+    <div class="faq-question">Does it work with all languages?</div>
+    <div class="faq-answer">
+      Yes, it supports multiple languages like JS, Python, HTML, CSS and more.
+    </div>
+  </div>
+
+  <div class="faq-item" onclick="toggleFAQ(this)">
+    <div class="faq-question">Is it free?</div>
+    <div class="faq-answer">
+      Yes, basic features are free. Pro features are optional.
+    </div>
+  </div>
+
+  <div class="faq-item" onclick="toggleFAQ(this)">
+    <div class="faq-question">How do I install it?</div>
+    <div class="faq-answer">
+      Click “Try on VS Code” and install from the marketplace.
+    </div>
+  </div>
+
+</section>
+
+
+<footer class="footer">
+
+  <p>© 2026 Code Origin</p>
+
+  <div class="socials">
+    <a href="https://github.com/gittrend-dev/code-origin" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://twitter.com/code-origin" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://linkedin.com/code-origin" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
