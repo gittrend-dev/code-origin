@@ -1,8 +1,8 @@
 function download() {
 
-  // Direct VSIX download link
+  // Direct VSIX download
   window.open(
-    "https://github.com/gittrend-dev/code-origin/releases/latest",
+    "https://github.com/gittrend-dev/code-origin/releases/download/v0.0.1/code-origin-1.0.0.vsix",
     "_blank"
   );
 }
@@ -46,31 +46,4 @@ function openVSCode() {
     }
 
   }, 1500);
-}
-
-/* =========================
-   NEW VSIX DOWNLOAD OPTION
-========================= */
-
-function downloadVSIX() {
-
-  // Open latest GitHub release
-  window.open(
-    "https://github.com/gittrend-dev/code-origin/releases/latest",
-    "_blank"
-  );
-}
-
-/* =========================
-   DIRECT VSIX FILE DOWNLOAD
-   (Optional)
-========================= */
-
-function directVSIXDownload() {
-
-  // Replace with your real VSIX file link
-  window.open(
-    "https://github.com/gittrend-dev/code-origin/releases/download/v1.0.0/code-origin-1.0.0.vsix",
-    "_blank"
-  );
 }
